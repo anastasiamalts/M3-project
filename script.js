@@ -72,9 +72,7 @@ let getCurrencybyInputRight = () => {
 getCurrencybyInput()
 getCurrencybyInputRight()
 
-    // checkValue - проверить, что вписали, пустое ли поле, что правильные символы, убрать все пробелы
-    // функция match
-    //регулярное выражение для проверки дробного числа 
+    // 
 
 // проверка здорового человека
     // let userLeftText = document.querySelector('.user-input');

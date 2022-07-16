@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,100 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
+
 <body>
-    <script src = script.js>
-        
-    </script>
+    <header>
+        <img src="images/logo.svg" alt="" class="bank">
+        <div class="header-options">
+            <div class="options">
+                <a href=#>БАНК</a>
+            </div>
+            <div class="options">
+                <a href=#>БИЗНЕС</a>
+            </div>
+            <div class="options">
+                <a href=#>ИНВЕСТИЦИИ</a>
+            </div>
+            <div class="options">
+                <a href=#>СТРАХОВАНИЕ</a>
+            </div>
+            <div class="options">
+                <a href=#>МОБАЙЛ</a>
+            </div>
+            <div class="options">
+                <a href=#>ПУТЕШСТВИЯ</a>
+            </div>
+            <div class="options">
+                <a href=#>РАЗВЛЕЧЕНИЯ</a>
+            </div>
+        </div>
+        <button class="login">
+            ВОЙТИ
+        </button>
+        </div>
+    </header>
+    <div class="wrapper">
+        <h1>Конвертер валют онлайн</h1>
+        <div class="convertor">
+            <div class="one-side">
+                <p>У меня есть</p>
+                <div class="buttons left">
+                    <label class="button">
+                        <input type="radio" name="currency" class="hidden-button" checked>
+                        <div class="currency-button" class="left-button" >RUB</div>
+                    </label>
+                    <label class="button">
+                        <input type="radio" name="currency" class="hidden-button">
+                        <div class="currency-button" >USD</div>
+                    </label>
+                    <label class="button">
+                        <input type="radio" name="currency" class="hidden-button">
+                        <div class="currency-button">EUR</div>
+                    </label>
+                    <label class="button">
+                        <input type="radio" name="currency" class="hidden-button">
+                        <div class="currency-button" class="right-button">GBP</div>
+                    </label>
+
+                </div>
+                <div class="input-window-left">
+                    <input type="text" value = "1" name = "valueToConvert" >
+                    <div class="currency-rate-left">
+                        1 RUB = 0.0135 USD
+                    </div>
+                </div>
+            </div>
+            <div class="another-side">
+                <p>Я хочу получить</p>
+                <div class="buttons right">
+                    <label class="button">
+                        <input type="radio" name="another-currency" class="hidden-button">
+                        <div class="currency-button" class="left-button" >RUB </div>
+                    </label>
+                    <label class="button">
+                        <input type="radio" name="another-currency" class="hidden-button" checked>
+                        <div class="currency-button">USD</div>
+                    </label>
+                    <label class="button">
+                        <input type="radio" name="another-currency" class="hidden-button">
+                        <div class="currency-button">EUR</div>
+                    </label>
+                    <label class="button">
+                        <input type="radio" name="another-currency" class="hidden-button">
+                        <div class="currency-button" class="right-button">GBP</div>
+                    </label>
+
+                </div>
+                <div class="input-window-right">
+                    <input type="text" name = "convertedValue">
+                    <div class="currency-rate-right">
+                        1 RUB = 0.0135 USD
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src=script.js> </script>
 </body>
+
 </html>
