@@ -11,16 +11,10 @@ let getCurrencyRate = (side = 'left') => {
     let inputValue = side === 'left'
         ? document.querySelector('[name=valueToConvert]').value
         : document.querySelector('[name=convertedValue]').value
-    // let inputRight = side === 'left'
-    //     ? document.querySelector('[name=convertedValue]').value
-    //     : document.querySelector('[name=valueToConvert]').value
-
     fetch(`https://api.exchangerate.host/convert?from=${leftCurrency.innerText}&to=${rightCurrency.innerText}&amount=${inputValue}`)
         .then(response => response.json())
         .then(data => {
             console.log(data)
-            // textLeft.textContent = `1 ${leftCurrency.innerText} = ${data.info.rate} ${rightCurrency.innerText}`
-            // textRight.textContent = `1 ${rightCurrency.innerText} = ${data.info.rate} ${leftCurrency.innerText}`
             if (side === 'left') {
                 document.querySelector('[name=convertedValue]').value = data.result.toFixed(2)
                 textLeft.textContent = `1 ${leftCurrency.innerText} = ${data.info.rate} ${rightCurrency.innerText}`
@@ -32,12 +26,6 @@ let getCurrencyRate = (side = 'left') => {
                 textRight.textContent = `1 ${leftCurrency.innerText} = ${(1/data.info.rate).toFixed(6)} ${rightCurrency.innerText}`
             }
         })
-    // fetch(`https://api.exchangerate.host/convert?from=${rightCurrency.innerText}&to=${leftCurrency.innerText}&amount=${inputValue}`)
-    // .then(response => response.json())
-    // .then(data => {
-    //     textRight.textContent = `1 ${rightCurrency.innerText} = ${data.info.rate} ${leftCurrency.innerText}`
-    //     document.querySelector('[name=valueToConvert]').value = data.result
-    // })
 }
 getCurrencyRate()
 
@@ -72,7 +60,7 @@ let getCurrencybyInputRight = () => {
 getCurrencybyInput()
 getCurrencybyInputRight()
 
-    // 
+
 
 // проверка здорового человека
     // let userLeftText = document.querySelector('.user-input');
