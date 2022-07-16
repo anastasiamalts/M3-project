@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0
+}
+main {
+    margin: 0 auto;
+}
+header {
+    background-color: #F5F5F6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 50px;
+}
+.wrapper {
+    max-width: 700px;
+    margin: 50px auto;
+}
+.header-options {
+    display: flex;
+    max-height: 60px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+a {
+    font-size: 12px;
+    text-decoration: none;
+    color: #959BA4
+}
+.options {
+    display: flex;
+    margin: 10px;
+}
+a:hover {
+    color: black;
+    font-weight: bolder;
+}
+
+.login {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 11px;
+    background: #FFFFFF;
+    border:none;
+    margin: 0 20px 0 300px;
+}
+img {
+    margin: 0 65px 0 100px;
+}
+.convertor {
+    display: flex;
+    justify-content: space-between;
+}
+p {
+    font-size: 12px;
+    color: #9F9F9F;
+}
+.buttons {
+    display: flex;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+.right-button .left-button {
+    border-radius: 0px 3px 3px 0px;
+    
+}
+
+.currency-button {
+    width: 64px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    border: 1px solid #E5E5E5;
+    border-collapse: collapse;
+}
+.hidden-button {
+    display:none;
+}
+.hidden-button:checked ~ .currency-button {
+    background-color: #833AE0;
+    color: white;
+
+}
+.currency-rate-left  {
+    font-size: 12px;
+    color: #C6C6C6;
+}
+.currency-rate-right {
+    font-size: 12px;
+    color: #C6C6C6;
+}
+
+.input-window-left, .input-window-right {
+    
+    width: 259px;
+    height: 102px;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+input {
+    border: none;
+    outline: none;
+    font-weight: 700;
+    font-size: 36px;
+    width:100%;
+    padding: 5px 14px;
+    box-sizing: border-box;
+}
+
+.currency-rate-left, .currency-rate-right {
+    padding: 5px 14px;
+}
